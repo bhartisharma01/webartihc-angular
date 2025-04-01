@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+// @use '@angular/material' as mat;
+// @include mat.core();
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+$primary-color: #d12277;
+$secondary-color: #0aa4fe;
+$background-color: #eaeef3;
+$text-color: #333;
+
+// Apply them to CSS variables for flexibility
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
